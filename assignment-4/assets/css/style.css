@@ -1,46 +1,113 @@
 body {
     font-family: Arial, sans-serif;
 }
+
 .profile-header {
     display: flex;
     justify-content: center;
     padding: 20px;
 }
+
 .profile-card {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; 
+    justify-content: center;
     align-items: center;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #f9f9f9;
-    max-width: 75%;
+    max-width: 90%; 
     margin: auto;
 }
+
+.account {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.profile-info {
+    padding: 0 20px;
+}
+
 .profile-image img {
     border-radius: 50%;
     width: 150px;
 }
+
 .profile-info h3 {
-    margin: 0;
     font-size: 24px;
     font-weight: bold;
 }
+
 .profile-info p {
-    margin: 5px 0;
     color: gray;
+    padding-bottom: 10px;
 }
+
 .profile-buttons button {
     margin-right: 10px;
 }
+
 .profile-details {
-    margin-left: 30px;
+    margin-left: 0;
+    margin-top: 20px; 
+    text-align: center; 
 }
+
 .profile-details table {
-    margin: 0;
+    margin: 0 auto;
     font-size: 14px;
 }
+
 .profile-details th {
     text-align: left;
     padding-right: 15px;
+}
+
+.profiles {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.edit-label {
+    display: flex;
+    margin: auto 10px;
+}
+.swal2-input {
+    margin: 10px 0;
+    width: 60%;
+}
+
+@media screen and (min-width: 768px) {
+    .profile-card {
+        flex-direction: row; 
+        max-width: 70%;
+    }
+
+    .account {
+        flex-direction: row; 
+    }
+
+    .profile-details {
+        text-align: left; 
+        margin-left: 30px;
+    }
+
+    .profiles {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .edit-label {
+        display: flex;
+        margin: auto 10px;
+    }
+
+    .swal2-input {
+        margin: 10px 0;
+        width: 60%;
+    }
 }
