@@ -9,7 +9,7 @@ const App = () => {
    axios.get("https://api.nytimes.com/svc/search/v2/articlesearch.json", {
       params: {
         'q' : 'election',
-        'api-key': 'FAwsnHAviUGHb3FWynGkQbOgaMHtIXIA'
+        'api-key': ''
       }
    })
    .then((response) => {
