@@ -16,7 +16,7 @@ export default function App() {
         },
       })
       .then((response) => {
-        console.log("Response data:", response.data.rates);
+        // console.log("Response data:", response.data.rates);
         const rates = [];
         for (const [currency, exchangeRate] of Object.entries(
           response.data.rates
