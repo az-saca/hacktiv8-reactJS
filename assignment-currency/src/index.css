@@ -1,0 +1,49 @@
+:root {
+  background-color: #e67e22;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.rateTable {
+  background-color: #e67e22;
+  color: white;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.table {
+  background-color: #e67e22;
+  color: white;
+  margin: 0 auto;
+}
+
+th, td {
+  padding: 10px 20px;
+}
+
+th {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+td {
+  font-size: 1.5rem;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer p {
+  margin: 0;
+  padding: 0;
+}
