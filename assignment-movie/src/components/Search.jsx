@@ -1,42 +1,32 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { searchMovies } from "../Api";
 
-export default function Search() {
-    // const [search, setSearch] = useState("");
-    // const [movies, setMovies] = useState([]);
-    // const [loading, setLoading] = useState(false);
-    // const [error, setError] = useState(null);
-    
-    // const fetchMovies = async () => {
-    //     try {
-    //     setLoading(true);
-    //     const response = await fetch(
-    //         `https://www.omdbapi.com/?s=${search}&apikey=263d22d8`
-    //     );
-    //     const data = await response.json();
-    //     if (data.Response === "True") {
-    //         setMovies(data.Search);
-    //         setError(null);
-    //     } else {
-    //         setError(data.Error);
-    //         setMovies([]);
-    //     }
-    //     } catch (error) {
-    //     setError(error.message);
-    //     setMovies([]);
-    //     } finally {
-    //     setLoading(false);
-    //     }
-    // };
-    
+// eslint-disable-next-line react/prop-types
+export default function Search({onSearch}) {
+  const [query, setQuery] = useState("")
+  const handleChange = async (e) => {
+
+    e.preventDefault()
+    const res = await searchMovies(query)
+    onSearch(res)
+  }
+
     return (
-      <form className="d-flex nav-search" role="search">
+      <form
+        className="d-flex nav-search"
+        id="nav-search"
+        role="search"
+        onSubmit={handleChange}>
         <input
           className="form-control me-2"
+          id="search"
           type="search"
           placeholder="Search"
           aria-label="Search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
         />
-        <button className="btn btn-outline-success" type="submit">
+        <button className="btn btn-outline-success" id="btn-submit" type="submit" >
           <i className="bi bi-search"></i>
         </button>
       </form>

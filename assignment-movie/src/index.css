@@ -119,6 +119,7 @@ button[type="submit"] {
   font-size: 18px;
 }
 
+
 .movie-img {
   /* padding: x; */
   /* margin: 0;
@@ -133,4 +134,15 @@ button[type="submit"] {
   /* height: 375px; */
   width: 75%;
   /* align: end; */
+}
+
+.footer {
+  display: flex;
+  padding: 0px 20px;
+  margin-top: 20px;
+  background-color: rgb(255, 119, 0);
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: aliceblue;
 }

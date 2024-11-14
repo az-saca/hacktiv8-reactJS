@@ -8,6 +8,7 @@ export const getMovies = async () => {
     return movie.data.Search
 }
 export const searchMovies = async (q) => {
-    const search = await axios.get(q)
-    return
+    const search = await axios.get(`${baseUrl}${apiKey}&s=${q}`);
+    console.log({search : search})
+    return search.data.Search
 }
