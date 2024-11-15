@@ -64,7 +64,7 @@ export default function App() {
           <br />
           This application uses API from <u>https:</u>
           <a href="https://www.currencyfreaks.com/">
-            //www.currencyfreaks.com/
+            www.currencyfreaks.com/
           </a>
         </p>
       </div>
