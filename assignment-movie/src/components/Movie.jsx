@@ -8,8 +8,8 @@ const Movie = ({movies}) => {
         movies.map((movie) => (
           <div
             key={movie.imdbID}
-            className="col"
-            style={{ background: "blue" }}>
+            className="col movie-wrapper"
+            >
             <img className="movie-img card-img-bottom" src={movie.Poster} />
             <div className="movie-title">
               {movie.Title} ({movie.Year})

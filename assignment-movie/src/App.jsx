@@ -26,7 +26,7 @@ const App = () => {
   return (
     <>
       <div className="app-header">
-      <Header />
+        <Header />
         <Search onSearch={handleSearch} />
       </div>
 
